@@ -42,12 +42,14 @@ fn main () {
     let stype = if long > 1{
        &args[1]
     }else{
-      panic!("啥!啥!啥! 这给的啥");
+       println!("警告 找不到第一个参数")
+      "no"
     };
     let s = if long > 2 {
        &args[2]
     }else{
-      panic!("啥!啥!啥! 这给的啥");
+       println!("警告 找不到第二个参数")
+      "no"
     };
     if stype == "-h"{
        println!("这是一个假的systemctl ，主要用来给使用proot容器的人使用，前提是 可以使 用service,如果运行 开关服务时没有用可能因为没有 chkconfig ，推荐安装 sysv-rc-conf 可以在root下运行  \n apt-get install sysv-rc-conf;cp /usr/sbin/sysv-rc-conf /usr/sbin/chkconfig ，来替代chkconfig 试过debian 找不到 chkconfig ");
