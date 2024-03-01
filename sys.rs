@@ -3,7 +3,7 @@ use std::process::Command;
 use std::env;
 //use std::io::Read;
 use std::str;
-//ruat编译器太他妈比牛逼了 直接修好代码 rust就是牛
+//rust编译器太他妈比牛逼了 直接修好代码 rust就是牛
 //此程序是个屑勉强能跑，欢迎给建议
 //参考文章 https://www.cnblogs.com/a5idc/p/13752839.html
 //此程序由何某在termux上编写
